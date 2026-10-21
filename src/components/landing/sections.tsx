@@ -188,7 +188,7 @@ export function Hero({ ctaRef }: { ctaRef: Ref<HTMLDivElement> }) {
 export function VideoSection() {
   const t = useCopy();
   return (
-    <section aria-labelledby="video-title" className="py-20 sm:py-24 lg:py-32">
+    <section aria-labelledby="video-title" className="pt-20 sm:pt-24 lg:pt-32">
       <Container>
         <div data-reveal className="mx-auto max-w-[640px] text-center">
           <H2 id="video-title">{t.video.title}</H2>
@@ -255,7 +255,7 @@ export function Doors() {
   const photoDoors = DOOR_ORDER.filter((d) => d.photo);
   const iconDoors = DOOR_ORDER.filter((d) => !d.photo);
   return (
-    <section aria-labelledby="puertas-title" className="pb-20 sm:pb-24 lg:pb-32">
+    <section aria-labelledby="puertas-title" className="py-20 sm:py-24 lg:py-32">
       <Container>
         <div data-reveal className="max-w-[640px]">
           <H2 id="puertas-title">{t.doors.title}</H2>

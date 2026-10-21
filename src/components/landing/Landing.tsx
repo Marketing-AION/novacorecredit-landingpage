@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import { cx } from "../enroll/ui";
 import { LangProvider, PATHS, useLang, type Lang } from "../../lib/i18n";
 import { CONTACT } from "../enroll/data";
-import { useCopy } from "./content";
+import { VIDEO_SRC, useCopy } from "./content";
 import { Container, EnrollLink, LangSwitch, useReveal } from "./parts";
 import {
   Closing,
@@ -226,7 +226,8 @@ function LandingPage() {
 
       <main id="contenido">
         <Hero ctaRef={heroCtaRef} />
-        <VideoSection />
+        {/* La sección del video aparece cuando haya video (VIDEO_SRC en content.ts) */}
+        {VIDEO_SRC && <VideoSection />}
         <Doors />
         <WhyReview />
         <Process />
